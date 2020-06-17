@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table | Sprial Trading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'Beta/css/base.css' %}">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+    <nav class="topnav" dir="rtl">
+        <a href="#Home">خانه</a>
+        <a href="{% url 'Blog:start_blog' %}">فیلم ها و مقاله های آموزشی</a>
+        <a href="#help">آموزش استفاده از جدول</a>
+        <a href="#about_us">درباره ما</a>
+    </nav>
+
+    <div class="timing" dir="rtl">
+        <div class="container-button">
+            <div class="con-flex">
+                <button id="m1"> 1 ماه اخیر</button>
+                <button id="m3"> 3 ماه اخیر</button>
+                <button id="m6"> 6 ماه اخیر</button>
+                <button id="m9"> 9 ماه اخیر</button>
+            </div>
+            <div class="con-flex">
+                <button id="y1"> 1 سال اخیر</button>
+                <button id="y2"> 2 سال اخیر</button>
+                <button id="y3"> 3 سال اخیر</button>
+                <button id="manual">تاریخ انتخابی</button>
+            </div>
+        </div>
+        <span>spiraltrading.ir</span>
+    </div>
+
+    <hr style="margin: 0px 100px; border: 0.5px solid #c0c0c0;">
+
+    <div class="table-container" dir="rtl">
+        <table>
+            <thead>
+                <th>نماد سهم</th>
+                <th>بتا (beta)</th>
+                <th>کوواریانس (covariance)</th>
+                <th>انحراف معیار (standard deviation)</th>
+                <th>سود کل (total return)</th>
+                <th>(cv)</th>
+            </thead>
+            <tbody dir="ltr">
+            </tbody>
+        </table>
+    </div>
+
+    <hr style="margin: 0px 100px; border: 0.5px solid #c0c0c0;">
+
+    <div class="footer">
+        <span>.استفاده از سایت به منزله پذیرفتن قوانین می باشد</span>
+    </div>
+
+    <script rel="script" type="text/javascript" src="{% static 'Beta/js/base.js' %}"></script>
+</body>
+</html>

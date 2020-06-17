@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>control page | Spiral Trading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'Beta/css/controller.css' %}">
+    <style>
+        .main {
+            background-image: url("{% static 'Beta/control.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span>spiraltrading.ir</span>
+        <h2 id="alert"></h2>
+        <button id="update">UPDATE CSV FILES</button>
+        <button id="fixIndex">FIX INDEX FILE</button>
+        <button id="calc">CALCULATE RETURN VALUE</button>
+        <button id="output">CREATE OUTPUT FILES</button>
+        <button id="makeTable">MAKE TABLE DATA</button>
+        <button id="groupData">GROUP TABLE DATA</button>
+    </div>
+
+    <script rel="script" type="text/javascript" src="{% static 'Beta/js/controller.js' %}"></script>
+</body>
+</html>
